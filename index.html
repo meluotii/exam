@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Mina&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:400,700&display=swap" rel="stylesheet">
 
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script> -->
 
     <link rel="icon" href="images/icon/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
@@ -25,12 +25,13 @@
             <div class="page">
                 <h1 class="page__main-title">Bhromaon</h1>
                 <div class="page__sub-title">Safe Travel Anywhere</div>
-                <div class="page__input">
-                    <input class="page__input-field" type="search" placeholder="Search Your Travel Destination">
+                <form class="page__input">
+                    <input class="page__input-field" type="search" placeholder="Search Your Travel Destination" required
+                        minlength="3">
 
-                    <button type="button" class="page__input-button">Search
+                    <button type="submit" class="page__input-button">Search
                         <span class="page__input-magnifier"></span></button>
-                </div>
+                </form>
                 <div class="page__scroll"><a href="#" class="page__scroll-down">Scroll down</a></div>
                 <div class="page__arrow"></div>
             </div>
@@ -227,7 +228,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         $('.js-menu-toggler').click(function () {
-            $(this).toggleClass('header__toggler--open');
+            $(this).toggleClass('header-nav__toggler--open');
             $('.js-menu').fadeToggle();
         });
     </script>

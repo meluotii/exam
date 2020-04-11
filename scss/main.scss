@@ -115,6 +115,8 @@ $breakpointMobile: 480px;
         background-color: white;
         margin: 0 auto;
 
+        
+
         @media screen and (max-width: 680px) {
             padding: 0 2px;
         }
@@ -129,7 +131,10 @@ $breakpointMobile: 480px;
             color: #232323;
             padding: 0 10px;
 
+            
+
             &:focus { border: 1px solid $colorBase; }
+            &:invalid:focus { border: 1px solid red; }
             &::-ms-clear {  display: none; width : 0; height: 0; }
             &::-ms-reveal {  display: none; width : 0; height: 0; }
             &::-webkit-search-decoration,
@@ -275,6 +280,7 @@ $breakpointMobile: 480px;
         }
        
         &-item {
+            display: block;
             margin: 0 15px;
             font-family: $fontSecondary;
             font-size: $fontSizeBase - 2;
@@ -337,17 +343,17 @@ $breakpointMobile: 480px;
         }
 
         &--open {
-            .header__toggler-line:nth-child(1) {
+            .header-nav__toggler-line:nth-child(1) {
                 transform: rotate(45deg) translateY(13px);
                 margin-left: 9px;
                 background-color: #232323;
             }
 
-            .header__toggler-line:nth-child(2) {
+            .header-nav__toggler-line:nth-child(2) {
                 display: none;
             }
 
-            .header__toggler-line:nth-child(3) {
+            .header-nav__toggler-line:nth-child(3) {
                 transform: rotate(-45deg) translateY(-14px);
                 margin-left: 9px;
                 background-color: #232323;

@@ -200,6 +200,10 @@ h1, h2 {
   border: 1px solid #5474fd;
 }
 
+.page__input-field:invalid:focus {
+  border: 1px solid red;
+}
+
 .page__input-field::-ms-clear {
   display: none;
   width: 0;
@@ -376,6 +380,7 @@ h1, h2 {
 }
 
 .header-nav__nav-item {
+  display: block;
   margin: 0 15px;
   font-family: "Aleo", serif;
   font-size: 14px;
@@ -444,18 +449,18 @@ h1, h2 {
   bottom: 0;
 }
 
-.header-nav__toggler--open .header__toggler-line:nth-child(1) {
+.header-nav__toggler--open .header-nav__toggler-line:nth-child(1) {
   -webkit-transform: rotate(45deg) translateY(13px);
           transform: rotate(45deg) translateY(13px);
   margin-left: 9px;
   background-color: #232323;
 }
 
-.header-nav__toggler--open .header__toggler-line:nth-child(2) {
+.header-nav__toggler--open .header-nav__toggler-line:nth-child(2) {
   display: none;
 }
 
-.header-nav__toggler--open .header__toggler-line:nth-child(3) {
+.header-nav__toggler--open .header-nav__toggler-line:nth-child(3) {
   -webkit-transform: rotate(-45deg) translateY(-14px);
           transform: rotate(-45deg) translateY(-14px);
   margin-left: 9px;
